@@ -1,0 +1,448 @@
+*{
+    font-family:'Ubuntu',sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0; 
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(89.26359094454074deg, rgba(46, 51, 117,1) 19.477393617021278%,rgba(46, 50, 116,1) 19.477393617021278%,rgba(59, 43, 91,1) 81.55186170212765%);
+    padding:10px 0px 10px 0px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.navbar .container {
+    position: relative;
+    display: flex;
+}
+.logo {
+    display: block;
+    max-width: 125px;
+    margin:15px 100px 0px;
+    
+}
+.navbar .navbar_menu {
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 280px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.navbar .navbar_list{
+    list-style-type: none;
+}
+.navbar .navbar_item  {
+    position: relative;
+    margin: 0px 35px;
+    font-size: 20px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+.navbar .navbar_item:hover{
+    color: #85C2FF;
+}
+.hamburger {
+    display: none;
+}
+
+.marketing  {
+    padding: 80px  0px 87px 0px;
+    width: 100%;
+    height: 810px;
+    background: url('../img/bg/bg_1.png') center center / cover no-repeat;
+}
+
+.marketing .marketing_text{
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 320px;
+}
+
+.marketing .marketing_heading {
+    margin-bottom: 13px;
+    font-size: 70px;
+    font-weight: 700;
+    color: #ffffff;
+    
+}
+
+.marketing .marketing_descr {
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+    
+}
+
+
+.marketing .marketing_arrow {
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* сделал похожую анимацию по видео, но все делал сам */
+
+.marketing_arrow span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #CCCCFF;
+    border-right: 5px solid #CCCCFF;
+    transform: rotate(45deg);
+    margin: -16px;
+    animation: marketing_arrow 2s infinite;
+}
+.marketing_arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.marketing_arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes marketing_arrow{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-30px,-30px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(30px,30px);
+    }
+}
+
+.services {
+    padding: 60px 0px 136px 0px;
+}
+
+.services .services_heading {
+    font-size: 50px;
+    font-weight: 700;
+    color: #303030;
+    text-align: center;
+}
+
+.title {
+    margin-top: 8px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #787878;
+    text-align: center;
+}
+
+.services .services_hr {
+    margin-top: 10px;
+    border: none;
+    width: 65px;
+    height: 2px;
+    background-color: #4a4a4a;
+}
+
+.services .services_wrapper {
+    margin-top: 80px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.services .services_item {
+    width: 340px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 0px 10px;
+}
+.services_item:nth-child(1) {
+    margin-left: 0;
+}
+.services_item:nth-child(3) {
+    margin-right: 0;
+}
+.services .services_img {
+    height:170px;
+}
+.services .services_descr {
+    margin-top: 35px;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: #787878;
+    text-align: center;
+
+}
+
+.services .services_about {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    color: #5f5f5f;
+    text-align: center;
+
+}
+
+.services .services_btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 295px;
+    height: 63px;
+    background-color: #616161;
+    background-image: linear-gradient(0.0deg, rgba(47,61,252,0.45) 0%, rgba(100,17,135,0.45) 71%, rgba(100,17,135,0.45) 100%);
+    font-size: 23px;
+    font-weight: 900;
+    color: #ffffff;
+    border: none;
+    border-radius:50px;
+    outline: none;
+    transition: 0.3s all;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;    
+    
+}
+.services_btn:hover {
+    box-shadow: 4px 4px 22px #641187;
+    border: none;
+ }
+
+.works {
+    padding: 60px 0px 150px 0px;
+    background-color: #ebebeb;
+
+ }
+
+.works .works_hr {
+    margin-top: 10px;
+    border: none;
+    width: 50px;
+    height: 2px;
+    background-color: #4a4a4a;
+ }
+
+.works .works_wrapper {
+    width: 100%;
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+ }
+.works .works_col {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.works .works_item {
+    width: 100%;
+    padding: 15px;
+}
+
+.works .work_img_fix {
+    padding: 5px 0px 5px 0px;
+}
+
+.references {
+    padding: 60px 0px 108px 0px;
+    position: relative;
+}
+
+.references .references_hr {
+    margin-top: 10px;
+    border: none;
+    width: 100px;
+    height: 2px;
+    background-color: #4a4a4a;
+}
+
+.references .references_wrapper {
+    width: 100%;
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.references .references_img {
+    margin-right: 45px;
+    width: 320px;
+}
+
+.references .references_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.references .references_heading  {
+    font-size: 35px;
+    font-weight: 700;
+    color: #303030;
+}
+
+.references .references_descr {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 300;
+    color: #5f5f5f;
+    width: 650px;
+}
+
+.references .references_slider {
+    width: 100%;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.references .references_item {
+    margin: 0px 30px 0px 30px;
+}
+
+.contact {
+    width: 100%;
+    padding: 60px 0px 95px 0px;
+    background-color: #000000;
+}
+
+.contact .contact_title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.contact .contact_hr {
+    margin-top: 10px;
+    width: 70px;
+    height: 2px;
+    border: none;
+    background-color: #4a4a4a;
+}
+
+.contact .contact_form {
+    max-width: 1140px;
+    margin-top:24px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact .contact_input {
+    color: #ffffff;
+    width: 525px;
+    padding: 15px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    padding: 15px;
+    background: none;
+    border-radius: 0;
+    outline: none;
+}
+.contact .contact_input:nth-child(3) {
+    display: block;
+    width: 1140px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.contact .contact_input:focus {
+    border-bottom: 2px solid #56e2ff;
+}
+
+.contact .contact_btn {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    height: 60px;
+    background-color: #202020;
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    transition: 0.3s all;
+    cursor: pointer;
+    border: none;
+}
+
+.contact_btn:hover {
+    background: rgba(0,0,0,0);
+	color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+.contact .contact_block {
+    display: none;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #5f5f5f;
+    text-align: center;
+}
+
+.footer {
+    height: 201px;
+    background-color: #343434;
+    background-image: linear-gradient(90.0deg, rgba(47,61,252,0.34) 0%, rgba(100,17,135,0.34) 70%, rgba(100,17,135,0.34) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+}
+.footer .footer_logo {
+    margin-right: 70px;
+}
+.footer .footer_descr {
+    margin: 0px 70px 0px 70px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.footer .footer_connection {
+    margin: 0px 70px 0px 70px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.footer .footer_line1 {
+    display:flex;
+}
+.footer .footer_line2 {
+    display:flex;
+}
+.footer .footer_text   {
+    margin-left: 7px;
+}
+
+.footer .footer_social {
+    margin-left: 70px;
+}
+.footer .footer_item {
+    margin: 0px 10px 0px 10px;
+}
